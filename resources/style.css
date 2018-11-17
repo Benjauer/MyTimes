@@ -1,0 +1,37 @@
+
+/* General Selector */
+* {
+
+}
+
+/* Header Start */
+.header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+}
+
+.headerLeft {
+  display: inline-flex;
+}
+
+#logoParagraph {
+  color: MediumAquamarine;
+  align-items: center;
+  margin: auto auto auto 15px;
+  flex-flow: wrap row;
+}
+
+.headerRight {
+  display: inline-flex;
+  margin: auto auto;
+
+}
+
+.headerRight p {
+  text-decoration: underline;
+  margin: auto 15px auto 15px;
+}
+
