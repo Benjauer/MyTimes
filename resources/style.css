@@ -1,22 +1,43 @@
 
-/* General Selector */
-* div {
-  border: 1px solid black;
+/* General Selectors */
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  margin: 0 auto 0 auto;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* Header Start */
 .header {
-  font-family: Verdana;
+  font-family: "Verdana", serif;
   font-size: 14px;
   font-weight: bold;
   width: 100%;
+  height: 80px;
   display: flex;
   border-bottom: 1px solid black;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
 }
 
 .headerLeft {
   display: inline-flex;
+  margin-left: 20px;
 }
+
+
 
 #logoParagraph {
   color: MediumAquamarine;
@@ -25,16 +46,15 @@
   flex-flow: wrap row;
 }
 
-.headerRight {
+nav {
   display: inline-flex;
-  margin: auto auto;
+  flex-basis: 300px;
+  margin: auto auto auto 975px;
+  }
 
-}
-
-.headerRight p {
-  text-decoration: underline;
-  margin: auto 15px auto 15px;
-
+nav span {
+  display: inline-block;
+  padding: 30px 10px;
 }
 
 /* Header End */
@@ -46,6 +66,9 @@
   display: flex;
   justify-content: space-between;
   width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 
 .article {
@@ -73,16 +96,44 @@
   background-size: cover;
   font-size: 40px;
   display: flex;
+  height: 300px;
+}
+
+.mainStory p {
+  margin: 0 auto 30px auto
+}
+
+.columnArcticle {
+  display: flex;
+}
+
+.imgsColumnLarge {
+  display: flex;
+  text-align: center;
+  height: 300px;
+
 }
 
 .earthSpin {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
-  display: flex;
+  display: inline-flex;
+  width: 45%;
+
 }
 
 .research {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-  display: flex;
+  display: inline-flex;
+  width: 45%;
+
+}
+
+.orca {
+  width: 50%
+}
+
+.burgerBreakfast {
+  width: 50%;
 }
 
 /* Column Large class 'columnmedium' */
@@ -95,9 +146,17 @@
 .catCEO {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
   display: flex;
+  height: 300px;
+  flex-direction: column;
+  text-align: center;
 }
 
-/* Column Large class 'columnSmall' */
+.catCEO p {
+  position: relative;
+  bottom: 25px;
+}
+
+/* Column Small class 'columnSmall' */
 .columnSmall {
   width: 240px;
   display: flex;
@@ -111,15 +170,67 @@
   background-size: cover;
 }
 
+.newBites {
+  flex-direction: column;
+  font-family: Verdana, serif;
+  font-size: 12px;
+  color: DimGray;
+  height: 500px;
+}
 
+.newBites h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto auto 20px 50px;
+}
 
+.newBitesList {
+  background-color: WhiteSmoke;
+  list-style: none;
 
+}
 
+.newBites p {
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 40px;
+  padding: 15px 0 0 25px;
+}
 
+/* Footer Section  */
+footer {
+  height: 300px;
+  background-color: MediumAquamarine;
+  width: 1300px;
+  margin: 160px auto auto auto;
+  text-align: center;
 
+}
 
+footer h4 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: auto 20px auto auto;
+}
 
+footer p {
+  text-decoration: underline;
+  margin: auto 20px auto 20px;
+  font-size: 12px;
+}
 
+.footerContent {
+  display: inline-flex;
+  margin-top: 120px;
+}
+
+#copyright {
+  text-decoration: none;
+  margin-top: 20px;
+}
 
 
 
